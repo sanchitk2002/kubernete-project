@@ -22,3 +22,26 @@ nodes:
       hostPort: 443
       protocol: TCP
 ```
+
+# Namesapce
+```yaml
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: nginx
+```
+
+#Pod
+```yaml
+kind: Pod
+apiVersion: v1
+metadata:
+  name: nginx-pod
+  namespace: nginx
+spec:
+ containers:
+   - name: nginx
+     image: nginx:latest
+     ports:
+       - containerPort: 80
+```
