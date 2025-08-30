@@ -16,3 +16,6 @@ rm -f kubectl
 rm -rf kind
 
 echo "kind and kubectl installation complete"
+
+sudo apt-get update
+sudo apt-get install -y docker.io
