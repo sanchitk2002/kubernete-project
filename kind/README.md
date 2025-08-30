@@ -4,7 +4,7 @@ Install Docker, KIND and kubectl using the provided [script](https://github.com/
 
 ## 2. Setting Up the KIND Cluster
 Create a kind-config.yaml file.
-<pre> yaml
+<pre>'''yaml
   kind: Cluster 
   apiVersion: kind.x-k8s.io/v1alpha4 
   nodes: 
@@ -13,4 +13,4 @@ Create a kind-config.yaml file.
   - role: worker 
     image: kindest/node:v1.33.1 
   - role: worker 
-    image: kindest/node:v1.33.1</pre>
+    image: kindest/node:v1.33.1'''</pre>
