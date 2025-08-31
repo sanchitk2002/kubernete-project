@@ -3,7 +3,7 @@
 Install Docker, KIND and kubectl using the provided [script](https://github.com/sanchitk2002/kubernete-project/blob/main/kind/install.sh):
 
 ## 2. Setting Up the KIND Cluster
-Create a kind-config.yaml file.
+Create a kind-config.yaml file also known as cluster manifestation file
 ```yaml
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
@@ -22,17 +22,26 @@ nodes:
       hostPort: 443
       protocol: TCP
 ```
+Create the cluster using this config file 
+```
+kind create cluster --config kind-config.yaml --name sanchit-cluster
+```
 
-# Namesapce
+## Namesapce
+For creating namespace.yml
 ```yaml
 kind: Namespace
 apiVersion: v1
 metadata:
   name: nginx
 ```
+Apply the namespace using this manifest fil above
+```
+kubectl apply -f namespace.yml
+```
 
-#Pod
-```yaml
+## Pod
+```
 kind: Pod
 apiVersion: v1
 metadata:
