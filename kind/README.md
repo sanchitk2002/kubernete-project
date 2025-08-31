@@ -97,4 +97,31 @@ To scale the deployments
 ```
 kubectl scale deployment/nginx-deployment -n nginx --replicas=1      #change replicas according to traffic
 ```
+Replicaset.yml
+difference between replicaset and deployment is rollout update which deployment can do and replica can't
+```yaml
+kind: ReplicaSet
+apiVersion: apps/v1
+metadata:
+  name: nginx-replicasets
+  namespace: nginx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+
+  template:
+    metadata:
+      name: nginx-rep-pod
+      labels:
+        app: nginx
+
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+```
   
