@@ -11,7 +11,7 @@ sudo apt-get update
 sudo apt-get install -y docker.io
 
 echo "👤 Adding current user to docker group..."
-sudo usermod -aG docker "$USER"
+sudo usermod -aG docker "$USER" && newgrp docker
 
 echo "✅ Docker installed and user added to docker group."
 
