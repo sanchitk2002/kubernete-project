@@ -62,3 +62,39 @@ To enter the pod terminal
 ```
 kubectl exec -it nginx-pod -n nginx -- bash
 ```
+# Deployment
+```yaml
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: nginx-deployment
+  namespace: nginx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+
+  template:
+    metadata:
+      name: nginx-dep-pod
+      labels:
+        app: nginx
+
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+```
+Run the deployment.yml
+```
+kubectl apply -f deployment.yml
+```
+
+To scale the deployments
+```
+kubectl scale deployment/nginx-deployment -n nginx --replicas=1      #change replicas according to traffic
+```
+  
