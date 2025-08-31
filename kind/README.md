@@ -54,3 +54,11 @@ spec:
      ports:
        - containerPort: 80
 ```
+Apply the pod manifest file
+```
+kubectl apply -f pod.yml
+```
+To enter the pod terminal 
+```
+kubectl exec -it nginx-pod -n nginx -- bash
+```
