@@ -43,7 +43,7 @@ Install Docker, KIND and kubectl using the provided [script](https://github.com/
 
 ---
 
-## **Workloads** ([Workloads])(https://github.com/sanchitk2002/kubernete-project/tree/main/kind-cluster/Workloads)
+## **Workloads** ([Workloads](https://github.com/sanchitk2002/kubernete-project/tree/main/kind-cluster/Workloads))
 
 ### Deployments
 
