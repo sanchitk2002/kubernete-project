@@ -73,7 +73,7 @@ Install Docker, KIND and kubectl using the provided [script](https://github.com/
 2. `kubectl describe replicaset nginx-replicaset -n nginx`  
    Show detailed information about the ReplicaSet.
 
-### Jobs ([jobs.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/job.yml))and CronJobs ([cronJobs.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/cron-job.yml))
+### Jobs ([jobs.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/job.yml)) and CronJobs ([cronJobs.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/cron-job.yml))
 
 1. `kubectl apply -f job.yml`  
    Deploy a Job defined in `job.yml`.
