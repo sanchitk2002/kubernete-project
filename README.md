@@ -43,9 +43,9 @@ Install Docker, KIND and kubectl using the provided [script](https://github.com/
 
 ---
 
-## **Workloads** ([Workloads](https://github.com/sanchitk2002/kubernete-project/tree/main/kind-cluster/Workloads))
+## **Workloads** ([Workloads.yml](https://github.com/sanchitk2002/kubernete-project/tree/main/kind-cluster/Workloads))
 
-### Deployments
+### Deployments ([Deployment.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/deployment.yml))
 
 1. `kubectl apply -f deployment.yml`  
    Deploy a workload defined in `deployment.yml`.
@@ -59,21 +59,21 @@ Install Docker, KIND and kubectl using the provided [script](https://github.com/
 2. `kubectl describe statefulset mysql -n database`  
    Display detailed information about a StatefulSet.
 
-### DaemonSets
+### DaemonSets ([Daemonsets.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/daemonsets.yml))
 
 1. `kubectl apply -f daemonset.yml`  
    Deploy a DaemonSet for running pods on every node.
 2. `kubectl describe daemonset fluentd -n logging`  
    Display details about a DaemonSet.
 
-### ReplicaSets
+### ReplicaSets ([Replicaset.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/replicaset.yml))
 
 1. `kubectl apply -f replicaset.yml`  
    Deploy a ReplicaSet for managing pod replicas.
 2. `kubectl describe replicaset nginx-replicaset -n nginx`  
    Show detailed information about the ReplicaSet.
 
-### Jobs and CronJobs
+### Jobs ([jobs.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/job.yml))and CronJobs ([cronJobs.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/cron-job.yml))
 
 1. `kubectl apply -f job.yml`  
    Deploy a Job defined in `job.yml`.
