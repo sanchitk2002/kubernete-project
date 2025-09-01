@@ -12,7 +12,7 @@
 ### Setup On Local/AWS EC2
 
 1. `kind create cluster --name=tws-cluster --config=config.yml`  
-   Create a Kubernetes cluster using Kind with a specific configuration.
+   Create a Kubernetes cluster using Kind with a specific configuration.([config.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/config.yml)
 2. `kubectl config use-context kind-tws-cluster`  
    Switch the context to the Kind cluster.
 
