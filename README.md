@@ -81,3 +81,21 @@ Install Docker, KIND and kubectl using the provided [script](https://github.com/
    Deploy a CronJob to schedule recurring tasks.
 
 ---
+
+## **Networking**
+
+### Services([service.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/service.yml))
+
+1. `kubectl apply -f service.yml`  
+   Expose an application as a service.
+2. `kubectl describe svc nginx-service -n nginx`  
+   Show details of the nginx service.
+
+   ## **Storage**
+
+### Persistent Volumes (PV)([PersistentColume.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/PersistentVolume.yml)), Persistent Volume Claims (PVC)([PersistentVolumeClaim.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/PersistentVolumeClaim.yml))
+
+1. `kubectl apply -f persistentVolume.yml`  
+   Create a PersistentVolume.
+2. `kubectl apply -f persistentVolumeClaim.yml`  
+   Request storage through a PersistentVolumeClaim.
