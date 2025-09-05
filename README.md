@@ -93,7 +93,7 @@ Install Docker, KIND and kubectl using the provided [script](https://github.com/
 
    ## **Storage**
 
-### Persistent Volumes (PV)([PersistentColume.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/PersistentVolume.yml)), Persistent Volume Claims (PVC)([PersistentVolumeClaim.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/PersistentVolumeClaim.yml))
+### Persistent Volumes (PV)([PersistentVolume.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/PersistentVolume.yml)), Persistent Volume Claims (PVC)([PersistentVolumeClaim.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/PersistentVolumeClaim.yml))
 
 1. `kubectl apply -f persistentVolume.yml`  
    Create a PersistentVolume.
