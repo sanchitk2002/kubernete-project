@@ -91,6 +91,15 @@ Install Docker, KIND and kubectl using the provided [script](https://github.com/
 2. `kubectl describe svc nginx-service -n nginx`  
    Show details of the nginx service.
 
+   ### Ingress({[Ingress.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/ingress.yml))
+   Ingress should be configured in the kind cluster
+   `kubectl apply -f https://kind.sigs.k8s.io/examples/ingress/deploy-ingress-nginx.yaml`
+
+1. `kubectl apply -f ingress.yml`  
+   Configure an Ingress resource for routing traffic.
+2. `kubectl describe ingress nginx-ingress -n nginx`  
+   Display details about an Ingress resource.
+
    ## **Storage**
 
 ### Persistent Volumes (PV)([PersistentVolume.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/PersistentVolume.yml)), Persistent Volume Claims (PVC)([PersistentVolumeClaim.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/Workloads/PersistentVolumeClaim.yml))
