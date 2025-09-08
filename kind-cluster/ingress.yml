@@ -1,5 +1,3 @@
-` It should be configured in the kind cluster ` 
-
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
