@@ -93,7 +93,8 @@ Install Docker, KIND and kubectl using the provided [script](https://github.com/
 
    ### Ingress({[Ingress.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/ingress.yml))
    Ingress should be configured in the kind cluster
-   `kubectl apply -f https://kind.sigs.k8s.io/examples/ingress/deploy-ingress-nginx.yaml`
+   
+   ` https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/ingress.yml `
 
 1. `kubectl apply -f ingress.yml`  
    Configure an Ingress resource for routing traffic.
