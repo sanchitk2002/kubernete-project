@@ -91,7 +91,7 @@ Install Docker, KIND and kubectl using the provided [script](https://github.com/
 2. `kubectl describe svc nginx-service -n nginx`  
    Show details of the nginx service.
 
-   ### Ingress({[Ingress.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/ingress.yml))
+   ### Ingress([Ingress.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/ingress.yml))
    Ingress should be configured in the kind cluster
    ` https://github.com/sanchitk2002/kubernete-project/blob/main/kind-cluster/ingress.yml `
 
