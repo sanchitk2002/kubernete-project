@@ -108,3 +108,11 @@ Install Docker, KIND and kubectl using the provided [script](https://github.com/
    Create a PersistentVolume.
 2. `kubectl apply -f persistentVolumeClaim.yml`  
    Request storage through a PersistentVolumeClaim.
+
+
+### ConfigMaps ([config.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/mysql/configMap.yml)) and Secrets ([secrets.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/mysql/Secrets.yml))
+
+1. `kubectl create configmap app-config --from-file=config.properties`  
+   Create a ConfigMap from a file.
+2. `kubectl create secret generic db-credentials --from-literal=username=admin --from-literal=password=admin123`  
+   Create a Secret with database credentials.
