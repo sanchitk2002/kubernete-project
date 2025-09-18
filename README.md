@@ -109,6 +109,11 @@ Install Docker, KIND and kubectl using the provided [script](https://github.com/
 2. `kubectl apply -f persistentVolumeClaim.yml`  
    Request storage through a PersistentVolumeClaim.
 
+### StorageClasses
+
+1. `kubectl get storageclass`  
+   List all storage classes available in the cluster.
+
 
 ### ConfigMaps ([config.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/mysql/configMap.yml)) and Secrets ([secrets.yml](https://github.com/sanchitk2002/kubernete-project/blob/main/mysql/Secrets.yml))
 
@@ -116,3 +121,30 @@ Install Docker, KIND and kubectl using the provided [script](https://github.com/
    Create a ConfigMap from a file.
 2. `kubectl create secret generic db-credentials --from-literal=username=admin --from-literal=password=admin123`  
    Create a Secret with database credentials.
+
+---
+
+## **Scaling and Scheduling**
+
+### HPA and VPA
+
+1. `kubectl autoscale deployment nginx --cpu-percent=50 --min=1 --max=10 -n nginx`  
+   Enable Horizontal Pod Autoscaler (HPA).
+2. `kubectl apply -f vpa.yml`  
+   Deploy a Vertical Pod Autoscaler (VPA).
+
+### Node Affinity and Taints/Tolerations
+
+1. `kubectl taint nodes node1 key=value:NoSchedule`  
+   Apply a taint to a node.
+2. `kubectl apply -f node-affinity.yml`  
+   Define node affinity rules for pods.
+
+### Resource Quotas, Limits, Probes
+
+1. `kubectl apply -f resourcequota.yml`  
+   Set resource limits and quotas in a namespace.
+2. `kubectl describe quota my-quota -n dev`  
+   Display details of a resource quota.
+
+---
