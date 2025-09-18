@@ -19,4 +19,12 @@ spec:
       - name: notes-app
         image: sanchit019/notes-app-k8s:latest
         ports:
-        - containerPort: 8000
+        - containerPort: 8000 
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8000                       # Probes
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8000
